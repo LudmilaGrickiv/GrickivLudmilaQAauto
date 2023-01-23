@@ -29,23 +29,6 @@
     #assert user.second_name == 'Grickiv'
 
 
-
-
-import pytest
-
-
-class User:
-
-    def __init__(self) -> None:
-        self.name = 'Ludmila'
-        self.second_name = 'Grickiv'
-
-
-@pytest.fixture
-def user():
-    yield User()
-
-
 def test_remove_name(user):
     user.name = ''
     assert user.name == ''
