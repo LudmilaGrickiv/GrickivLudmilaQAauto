@@ -56,7 +56,7 @@ def test_product_delete():
 
 
 @pytest.mark.database
-def  test_detailed_prders():
+def  test_detailed_orders():
     db = Database()
     orders = db.get_detailed_orders()
     print("Замовлення", orders)  
